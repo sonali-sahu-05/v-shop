@@ -1,0 +1,123 @@
+/* General Styles */
+.shop {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .category-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 160px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .category-card span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Product Section */
+  .all-p h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+    color: #2d2d2d;
+  }
+  
+  .all-p {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+    color: #2d2d2d;
+    width: 100%; /* Ensure it takes full width */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center vertically if required */
+  }
+  
+  .all-p {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center; /* Ensures the text is centered */
+    color: #2d2d2d;
+    width: 100%; /* Ensures the element takes up the full width */
+  }
+  
+  .product-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .category-card {
+      width: 130px;
+      padding: 12px;
+    }
+  
+    .category-card img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .all-p {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .category-section {
+      gap: 10px;
+    }
+  
+    .category-card {
+      width: 100px;
+      padding: 10px;
+    }
+  
+    .category-card img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .all-p {
+      font-size: 20px;
+    }
+  }
+  

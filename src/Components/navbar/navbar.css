@@ -1,0 +1,155 @@
+/* General Navbar Styles */
+.nav {
+  width: 100%;
+  height: 150px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.53);
+  background-color: #2d2d2d; /* Dark Gray */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Navbar */
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgb(25, 29, 33);
+  border-bottom: 1px solid #444;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fbbf24; /* Yellow */
+  gap: 10px;
+}
+
+/* Search Box */
+.search-box {
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.search-box input {
+  width: 70%;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-box button {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background: white;
+  border: none;
+  color: #fbbf24;
+}
+
+/* Cart Box */
+.cart-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fbbf24;
+  cursor: pointer;
+}
+
+.cart-box span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 14px;
+  background: white;
+  color: #2d2d2d;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-weight: bold;
+}
+
+/* Bottom Navbar */
+.bottom-nav {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #444;
+}
+
+.bottom-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.bottom-nav ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.bottom-nav ul a:hover {
+  background: #fbbf24;
+  color: #2d2d2d;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 750px) {
+  .search-box {
+      display: none;
+  }
+
+  .top-nav {
+      flex-direction: column;
+  }
+
+  .logo {
+      font-size: 24px;
+  }
+
+  .cart-box svg {
+      width: 40px;
+      height: 40px;
+  }
+}
+/* Cart Box */
+.cart-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fbbf24; /* Yellow */
+  cursor: pointer;
+  font-size: 24px;  /* Ensure the icon is large enough */
+}
+
+.cart-box svg {
+  width: 40px;
+  height: 40px; /* Make sure the cart icon is visible */
+}
+
+.cart-box span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 14px;
+  background: white;
+  color: #2d2d2d;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-weight: bold;
+}

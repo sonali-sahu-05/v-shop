@@ -1,0 +1,65 @@
+.product {
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensure content aligns at the top */
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensuring image takes up appropriate space */
+.product img {
+    width: 100%;
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image fills the area */
+    border-radius: 10px;
+    display: block; /* Removes any bottom margin or spacing */
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+
+.product-details .name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product-details .price {
+    color: #007b00;
+    font-weight: bold;
+}
+
+.product-details button {
+    padding: 10px 20px;
+    background-color: #515050;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.product-details button:hover {
+    background-color: #6b6969;
+    transform: scale(1.05);
+}

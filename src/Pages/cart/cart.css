@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Cart Container */
+  .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px; /* mt-10 equivalent */
+    background-color: #f8f9fa;
+    min-height: 60vh; /* Ensures proper height even when cart is empty */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Empty Cart */
+  .empty-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .empty-cart img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+  
+  .empty-cart h1 {
+    font-size: 24px;
+    color: #6c757d;
+    font-weight: 500;
+  }
+  
+  /* Cart with Items Section */
+  .cartcart-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between CartCard components */
+    width: 100%;
+    max-width: 800px; /* Ensures content doesn't stretch too much */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cart {
+      padding: 15px;
+    }
+  
+    .empty-cart img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .empty-cart h1 {
+      font-size: 20px;
+    }
+  
+    .cartcart-section {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cart {
+      padding: 10px;
+    }
+  
+    .empty-cart img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .empty-cart h1 {
+      font-size: 18px;
+    }
+  
+    .cartcart-section {
+      gap: 10px;
+    }
+  }
+  
